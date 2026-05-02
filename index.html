@@ -80,8 +80,8 @@
                 <p>A web developer based in Indonesia</p>
             </div>
 
-            <div class="lg:flex ">
-                <div class="bg-white p-6 lg:p-10 my-3 rounded-2xl shadow-sm flex flex-col gap-4">
+            <div class="lg:flex md:flex">
+                <div class="bg-white p-6 lg:p-10 md:p-10 my-3 rounded-2xl shadow-sm flex flex-col gap-4">
                     <h1 class="font-semibold text-2xl lg:text-5xl">Passionate about web development and meaningful digital experiences</h1>
                     <p class="lg:max-w-xl">I create modern and responsive websites that combine simplicity, functionality, and thoughtful design. Every project is a step forward in learning, improving, and creating something valuable.</p>
                     <a href="#" class="py-2 px-5 bg-black text-white text-center rounded-full uppercase border lg:max-w-1/2 hover:bg-white hover:border-black hover:text-black transition duration-300">download resume</a>
@@ -93,5 +93,67 @@
         </div>
     </section>
 <!-- end of About me section -->
+
+<!-- Project -->
+    <section id="project" class="lg:max-w-6xl mx-auto px-4">
+
+        <div class="text-center pb-5">
+            <h1 class="text-4xl lg:text-6xl">My Projects</h1>
+        </div>
+
+        <div class="wrapper my-3 grid lg:grid-cols-2 lg:gap-4">
+
+<!-- left side -->
+            <div class="left hidden gap-4 lg:block lg:sticky lg:top-28 h-fit">
+                <div class="w-full max-h-fit rounded-2xl  bg-black overflow-hidden h-fit">
+                    <img src="src/img/project/example.avif" alt="" id="preview" class="w-full lg:min-h-[500px] object-cover">
+                </div>
+            </div>
+<!-- left side -->
+
+<!-- right side -->
+            <div class="right lg:h-screen scrollbar-hide lg:overflow-y-auto pr-2 lg:pb-40 flex flex-col gap-4">
+                <section data-image="src/img/project/example.avif" class="project flex flex-col gap-4 bg-white rounded-2xl shadow lg:min-h-[400px]">
+                    <img src="src/img/project/example.avif" alt="" class="w-full h-full rounded-t-2xl bg-black object-cover lg:hidden">
+                    <div class="flex flex-col gap-2 p-3">
+                        <h1 class="text-3xl font-medium">Service Desk</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut praesentium a reiciendis sed.</p>
+                    </div>
+                </section>
+
+                <section data-image="src/img/project/example1.avif" class="project flex flex-col gap-4 bg-white rounded-2xl shadow lg:min-h-[400px]">
+                    <img src="" alt="" class="w-full h-60 rounded-t-2xl bg-black object-cover lg:hidden">
+                    <div class="flex flex-col gap-2 p-3">
+                        <h1 class="text-3xl font-medium">Inventory</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut praesentium a reiciendis sed.</p>
+                    </div>
+                </section>
+                
+                <section data-image="src/img/project/example2.avif" class="project flex flex-col gap-4 bg-white rounded-2xl shadow lg:-mb-40 lg:min-h-[400px]">
+                    <img src="" alt="" class="w-full h-60 rounded-t-2xl bg-black object-cover lg:hidden">
+                    <div class="flex flex-col gap-2 p-3">
+                        <h1 class="text-3xl font-medium">BrewSpace</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut praesentium a reiciendis sed.</p>
+                    </div>
+                </section>
+            </div>
+<!-- right side -->
+
+        </div>
+    </section>
+<!-- end of Project -->
+
+<!-- About me section -->
+    <section id="aboutme" class="lg:max-w-6xl mx-auto px-4">
+        
+    </section>
+<!-- end of About me section -->
+
+<!-- stack -->
+ 
+<!-- end of stack -->
+
+
+<script src="src/js/script.js"></script>
 </body>
 </html>
