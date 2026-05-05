@@ -38,3 +38,20 @@ function updatePreview() {
 rightSide.addEventListener("scroll", updatePreview);
 
 updatePreview();
+
+
+const buttons = document.querySelectorAll(".toggle-btn");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const desc = btn.closest(".project").querySelector(".desc");
+    const arrow = btn.querySelector(".arrow");
+    
+    arrow.classList.toggle("rotate-180")
+
+    desc.classList.toggle("max-h-0");
+    desc.classList.toggle("max-h-[500px]");
+    desc.classList.toggle("opacity-0");
+    desc.classList.toggle("-translate-y-5");
+  });
+});
