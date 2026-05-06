@@ -1,3 +1,15 @@
+// header section
+
+const menuBtn = document.getElementById("menu-btn");
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+})
+
+// end of header section
+
+
+// project section
 const projects = document.querySelectorAll(".project");
 const preview = document.getElementById("preview");
 const rightSide = document.querySelector(".right");
@@ -55,3 +67,7 @@ buttons.forEach((btn) => {
     desc.classList.toggle("-translate-y-5");
   });
 });
+
+// end of project section
+
+

@@ -25,10 +25,61 @@ body{
     opacity: 1;
 }
 
-.arrow1 {
-    width: 3px;
-    height: 17px;
-    background-color: black;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+/* carousel */
+.carousel-icon{
+    flex: 0 0 auto;
+    width: 90px;
+    height: 90px;
+    margin: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
 }
+
+.carousel-track{
+    animation: scroll 15s linear infinite ;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+/* end of carousel */
+
+
+/* hamburger */
+.hamburger{
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    transition: all .2s ease-in-out;
+    border-radius: 50px;
+}
+
+.hamburger:first-child{
+    top: 7px;
+}
+
+.hamburger:last-child{
+    bottom: 2px;
+}
+
+.active .hamburger:first-child{
+    top: 50%;
+    transform: translateY(50%) rotate(45deg);
+}
+
+.active .hamburger:last-child{
+    bottom: auto;
+    top: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+/* end of hamburger */
+
+
