@@ -1,9 +1,21 @@
+
+
+
 // header section
 
 const menuBtn = document.getElementById("menu-btn");
+const menuBar = document.getElementById("menu-header");
+const links = document.querySelectorAll(".menu-header a");
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        menuBar.classList.remove('active');
+    })
+})
 
 menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("active");
+    menuBar.classList.toggle("active");
 })
 
 // end of header section
@@ -47,9 +59,10 @@ function updatePreview() {
     }
 }
 
-rightSide.addEventListener("scroll", updatePreview);
-
-updatePreview();
+if(rightSide && preview && projects.length > 0){
+    rightSide.addEventListener("scroll", updatePreview);
+    updatePreview();
+}
 
 
 const buttons = document.querySelectorAll(".toggle-btn");
@@ -71,3 +84,25 @@ buttons.forEach((btn) => {
 // end of project section
 
 
+// Contact Me
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_ut3vjyg",
+        "template_7tpttgq",
+        this
+    )
+    .then(() => {
+        alert("Message sent successfully!");
+        form.reset();
+    })
+    .catch((error) => {
+        alert("Failed to send message");
+        console.log(error);
+    });
+});
+// End Of Contact Me
