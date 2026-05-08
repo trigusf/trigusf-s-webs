@@ -10,6 +10,7 @@ const links = document.querySelectorAll(".menu-header a");
 links.forEach(link => {
     link.addEventListener("click", () => {
         menuBar.classList.remove('active');
+        menuBtn.classList.remove('active');
     })
 })
 

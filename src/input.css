@@ -63,21 +63,21 @@ body{
 }
 
 .hamburger:first-child{
-    top: 7px;
+    top: 5px;
 }
 
 .hamburger:last-child{
-    bottom: 2px;
+    bottom: 4px;
 }
 
 .active .hamburger:first-child{
-    top: 50%;
+    top: 45%;
     transform: translateY(50%) rotate(45deg);
 }
 
 .active .hamburger:last-child{
     bottom: auto;
-    top: 50%;
+    top: 45%;
     transform: translateY(50%) rotate(-45deg);
 }
 /* end of hamburger */
@@ -103,3 +103,6 @@ body{
     top: 97px;
 }
 
+.fade-transition {
+    @apply transition-all duration-500 hover:bg-slate-900 hover:text-white;
+}
