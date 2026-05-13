@@ -107,3 +107,9 @@ form.addEventListener("submit", function(e) {
     });
 });
 // End Of Contact Me
+
+// aos
+
+  AOS.init();
+
+// end of aos
