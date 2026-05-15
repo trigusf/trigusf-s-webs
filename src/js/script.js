@@ -85,6 +85,28 @@ buttons.forEach((btn) => {
 // end of project section
 
 
+// modal contact me
+function popup(){
+    const modal = document.getElementById("popup-succes");
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    setTimeout(() => {
+        modal.classList.remove("opacity-0", "scale-95");
+        modal.classList.add("opacity-100", "scale-100");
+    }, 10);
+}
+
+const modal = document.getElementById("popup-succes");
+const closePopup = document.getElementById("close-popup")
+
+closePopup.addEventListener("click", () => {
+    modal.classList.remove("flex");
+    modal.classList.add("hidden");
+})
+// end of modal contact me
+
 // Contact Me
 
 const form = document.getElementById("contact-form");
@@ -98,7 +120,8 @@ form.addEventListener("submit", function(e) {
         this
     )
     .then(() => {
-        alert("Message sent successfully!");
+        popup();
+
         form.reset();
     })
     .catch((error) => {
@@ -108,8 +131,4 @@ form.addEventListener("submit", function(e) {
 });
 // End Of Contact Me
 
-// aos
 
-  AOS.init();
-
-// end of aos
